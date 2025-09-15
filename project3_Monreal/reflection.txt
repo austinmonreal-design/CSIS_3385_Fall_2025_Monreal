@@ -1,0 +1,25 @@
+Reflection on Project 3
+
+First and foremost the most critical change I made to the form was its method. Currently posted
+was DELETE, which completely defeats the purpose of a user creation submission form. So I changed
+it to POST, in order to post the new user info.
+
+Following this I considered what validation rules to apply by considering types that needed to be
+added. I added letter for username, password for password, number for age, and email for email. I 
+figure since these are the inputs I changed to required, it made most sense to ensure their
+validation.
+
+The most pressing security issue I puzzled over was the message field. I knew this was the most
+dangerous point for the form, as if not carefully handled it could be utilized for cross site
+scripting. My research into HTML suggests that it cannot be utilized to create a word limit.
+To overcome this limitation and ensure a more secure message field, I decided to focus on 
+a character limit instead. Similar to the limits I placed on other inputs, I used maxlength
+to set a character limit of 333, more than enough to handle ten words the user might input,
+while still limiting the characters enough to prevent an injection by a threat actor.
+
+Ethical Integrity Declaration:
+I, [Your Name], affirm that all work submitted in this case study is my own. I have not used AI tools,
+AI-generated text, or AI-based writing assistants (such as ChatGPT, Gemini, Grammarly AI, etc.) in
+the creation of this assignment. I understand that using AI tools for this project violates the
+spirit of ethical learning and may result in academic consequences.
+Signed: AUSTIN MONREAL Date: September 15, 2025
